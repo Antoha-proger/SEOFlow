@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+
+:root {
+  --base-yellow-color: #f4ab00;
+  --menu-list-color: #232425;
+  --base-violet-color: #6425cb;
+  --text-violet-color: #2c1258;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Nunito;
+}
+
+.container {
+  width: 1160px;
+  margin: 0 auto;
+}
+
+.yellow-color {
+  color: var(--base-yellow-color);
+}
