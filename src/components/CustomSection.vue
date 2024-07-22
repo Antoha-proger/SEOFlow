@@ -3,8 +3,8 @@ defineProps(['section_color', 'section_class'])
 </script>
 
 <template>
-  <section :class="section_class" :style="{ background_color: section_color }">
-    <div class="container">
+  <section :class="section_class" :style="{ 'background-color': section_color }">
+    <div :class="['container', `${section_class}__container`]">
       <slot></slot>
     </div>
   </section>

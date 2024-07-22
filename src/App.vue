@@ -12,46 +12,65 @@ import BaseButton from '@/components/BaseButton.vue'
   </header>
 
   <main>
-    <CustomSection section_class="hero" section_color="#6425cb">
-      <div class="left-part">
-        <h1 class="hero__title">
-          We're strategic <span class="yellow-color">SEO Marketing</span> agency.
-        </h1>
-        <p class="hero__text">
-          Spyro is a powerful landing pages builder WP theme that lets you build high converting
-          landing pages using its specially crafted modules clubbed inside.
-        </p>
-        <BaseButton text="Explore Now" />
+    <section class="hero">
+      <div class="hero__container container">
+        <div class="hero__left-part">
+          <h1 class="hero__title">
+            We're strategic <span class="yellow-color">SEO Marketing</span> agency.
+          </h1>
+          <p class="hero__text">
+            Spyro is a powerful landing pages builder WP theme that lets you build high converting
+            landing pages using its specially crafted modules clubbed inside.
+          </p>
+          <BaseButton text="Explore Now" />
+        </div>
+        <div class="hero__right-part">
+          <img
+            class="hero__image"
+            src="/src/assets/img/HeroImage.png"
+            alt="Главное изображение"
+            width="738"
+            height="530"
+          />
+        </div>
       </div>
-      <div class="right-part">
-        <img
-          class="right-part__image"
-          src="/src/assets/img/HeroImage.png"
-          alt="Главное изображение"
-          width="738"
-          height="530"
-        />
-      </div>
-    </CustomSection>
+    </section>
   </main>
 </template>
 
 <style scoped lang="sass">
-header,
-.hero
+header
   background-color: #6425cb
   min-height: 162px
 
-
-.right-part
-    &__image
-        position: relative
-        right: -140px
-
 .hero
-    &__title
-        font-size: 60px
-        max-width: 500px
-        color: #fffff
-    &__text
+  background-color: #6425cb
+
+  &__container
+    display: flex
+    // column-gap: 20px
+    padding: 75px 0
+    align-items: center
+
+  &__right-part
+    width: 60%
+
+  &__left-part
+    width: 40%
+
+  &__image
+    position: relative
+    right: -40px
+
+  &__title
+    font-size: 60px
+    max-width: 650px
+    color: #FFFFFF
+    margin-bottom: 35px
+
+  &__text
+    color: #FFFFFF
+    max-width: 400px
+    line-height: 34px
+    margin-bottom: 25px
 </style>
